@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using ChatProvidersSDKBinding;
 using Foundation;
 using UIKit;
 
@@ -16,7 +16,7 @@ namespace TestApp.iOS
         const string zendeskAppId = "d51be9b3002ccc39b8314364089084a0b5f7b2377f44c058";
         const string zendeskClientId = "mobile_sdk_client_13d4dcd30c67918e19d7";
         const string zendeskUrl = "https://reverthmo.zendesk.com";
-
+        const string zendeskAccountKey = "4nG2oOxqoQdC1iQyENKl6PpLGNMcl2Cj";
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -31,8 +31,11 @@ namespace TestApp.iOS
             //#endif
 
             ZendeskCoreSDKBinding.ZDKZendesk.InitializeWithAppId(appId: zendeskAppId, clientId: zendeskClientId, zendeskUrl: zendeskUrl);
-           
-                global::Xamarin.Forms.Forms.Init();
+            var queue = NSOperationQueue.CurrentQueue.UnderlyingQueue;
+            ZDKChat.InitializeWithAccountKey(zendeskAccountKey, queue);
+            ZendeskCoreSDKBinding.ZDKCoreLogger.Enabled = true;
+
+            global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

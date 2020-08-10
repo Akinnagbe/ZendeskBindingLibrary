@@ -17,5 +17,10 @@ namespace TestApp
         {
             InitializeComponent();
         }
+
+        protected void StartChat(object sender,EventArgs e)
+        {
+            DependencyService.Get<IZendesk>().StartConversation();
+        }
     }
 }
