@@ -1,11 +1,9 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using NG.Sterling.Zendeskcorelibrary;
 
 namespace TestApp.Droid
 {
@@ -18,7 +16,19 @@ namespace TestApp.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+            //  var zendeskChat = new NG.Sterling.Zendeskcorelibrary.ZendeskChat();// ZendeskInitializer();
+            //  ZendeskChat.Test(this.Application);
+            //  ZendeskCore.Init(this.Application, "sterling1116.zendesk.com","","");
+            // ZendeskChat.Init(this.ApplicationContext, "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox");
+            // zendeskChat.Init(this.ApplicationContext, "sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox","","");
 
+            //   ZendeskBridge.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox");
+
+           // ZendeskChat.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox", "", "");
+
+            ZendeskCore.Init(this.Application, "https://sterling1116.zendesk.com", "", "");
+
+          //  ZendeskChat.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox", "", "");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
