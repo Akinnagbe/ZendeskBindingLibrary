@@ -1,4 +1,5 @@
 ﻿using System;
+using NG.Sterling.Zendeskcorelibrary;
 using TestApp.Droid;
 using Xamarin.Forms;
 
@@ -13,7 +14,8 @@ namespace TestApp.Droid
 
         void IZendesk.StartConversation()
         {
-            throw new NotImplementedException();
+            ZendeskCore.SetAnonymousIdentity();
+            ZendeskCore.StartMessaging(Xamarin.Essentials.Platform.CurrentActivity.Application);
         }
     }
 }

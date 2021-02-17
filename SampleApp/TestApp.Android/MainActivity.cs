@@ -24,11 +24,12 @@ namespace TestApp.Droid
 
             //   ZendeskBridge.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox");
 
-           // ZendeskChat.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox", "", "");
-
+          
             ZendeskCore.Init(this.Application, "https://sterling1116.zendesk.com", "", "");
 
-          //  ZendeskChat.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox", "", "");
+            ZendeskCore.Init(this.Application, "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox");
+
+            //  ZendeskChat.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox", "", "");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

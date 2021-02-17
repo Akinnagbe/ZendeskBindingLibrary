@@ -57,7 +57,7 @@
       
     </ItemGroup>
     <ItemGroup>
-      <LibraryProjectZip Include="Jars\ZendeskCoreLibrary-debug.aar" />
+      <LibraryProjectZip Include="Jars\ZendeskCoreLibrary-release.aar" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

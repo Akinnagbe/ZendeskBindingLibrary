@@ -55,6 +55,12 @@
     <ItemGroup>
         <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
         <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+        <PackageReference Include="GoogleGson">
+          <Version>2.8.5</Version>
+        </PackageReference>
+        <PackageReference Include="Xamarin.Google.Dagger">
+          <Version>2.27.0</Version>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="MainActivity.cs" />
@@ -99,9 +105,35 @@
         </ProjectReference>
     </ItemGroup>
     <ItemGroup>
-      <AndroidAarLibrary Include="chat-3.0.0.aar" />
-      <AndroidAarLibrary Include="chat-providers-3.0.0.aar" />
-      <AndroidAarLibrary Include="messaging-api-5.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.answerbot-3.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.answerbot-providers-3.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.belvedere2.belvedere-2.3.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.belvedere2.belvedere-core-2.3.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.chat-3.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.chat-providers-3.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.common-ui-4.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.core-4.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.guide-1.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.guide-providers-1.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.messaging-5.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.messaging-api-5.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.sdk-configurations-2.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.support-5.0.0.aar" />
+      <AndroidAarLibrary Include="com.zendesk.support-providers-5.0.0.aar" />
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidJavaLibrary Include="com.zendesk.chat-socket-client-6.0.0.jar" />
+      <AndroidJavaLibrary Include="com.zendesk.chat-visitor-client-8.0.0.jar" />
+      <AndroidJavaLibrary Include="com.zendesk.java-common-1.14.jar" />
+      <AndroidJavaLibrary Include="com.zendesk.suas.suas-1.2.0.jar" />
+      <AndroidJavaLibrary Include="com.jakewharton.disklrucache-2.0.2.jar" />
+      <AndroidJavaLibrary Include="com.jakewharton.picasso.picasso2-okhttp3-downloader-1.1.0.jar" />
+      <AndroidJavaLibrary Include="com.squareup.okhttp3.logging-interceptor-3.12.1.jar" />
+      <AndroidJavaLibrary Include="com.squareup.okhttp3.okhttp-3.12.1.jar" />
+      <AndroidJavaLibrary Include="com.squareup.okio.okio-1.15.0.jar" />
+      <AndroidJavaLibrary Include="com.squareup.picasso.picasso-2.5.2.jar" />
+      <AndroidJavaLibrary Include="com.squareup.retrofit2.converter-gson-2.3.0.jar" />
+      <AndroidJavaLibrary Include="com.squareup.retrofit2.retrofit-2.3.0.jar" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
