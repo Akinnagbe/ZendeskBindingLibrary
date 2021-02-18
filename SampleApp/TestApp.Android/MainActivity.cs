@@ -27,7 +27,7 @@ namespace TestApp.Droid
           
             ZendeskCore.Init(this.Application, "https://sterling1116.zendesk.com", "", "");
 
-            ZendeskCore.Init(this.Application, "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox");
+            ZendeskCore.Init(this, "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox");
 
             //  ZendeskChat.Init(this.ApplicationContext, "https://sterling1116.zendesk.com", "NmpYHgsRP2dn7WgkJMAJTR0YVg5XRTox", "", "");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

@@ -15,7 +15,7 @@ namespace TestApp.Droid
         void IZendesk.StartConversation()
         {
             ZendeskCore.SetAnonymousIdentity();
-            ZendeskCore.StartMessaging(Xamarin.Essentials.Platform.CurrentActivity.Application);
+            ZendeskCore.StartMessaging(Xamarin.Essentials.Platform.CurrentActivity);
         }
     }
 }
